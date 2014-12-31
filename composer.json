@@ -1,0 +1,9 @@
+{
+    "name": "Clocal/PeteThePlumberUK",
+    "description": "Pete the plumber website",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "~2.3",
+        "major-caiger/dispatcher": "~0.1"
+    }
+}
