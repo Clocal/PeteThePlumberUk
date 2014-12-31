@@ -1,0 +1,602 @@
+@import "../css/reset.css";
+@import "../css/skeleton.css";
+@import "../css/superfish.css";
+@import "../css/forms.css";
+@import "../css/flexslider.css";
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+    background:#2e2e2e;
+    font:12px/18px Arial, Helvetica, sans-serif;
+    color:#838383;
+    position:relative;
+    min-width:960px;
+}
+html, body {
+    height:100%;
+}
+p {
+    padding-bottom:18px
+}
+a {
+    outline:none;
+    cursor:pointer;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline
+}
+.contacts {
+    font-size:20px;
+    padding-bottom:37px
+}
+/*  Header styles */
+h1, h2, h3, h4, h5, h6, .contacts {
+    line-height:1.2em;
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal;
+    padding-bottom:18px;
+    color:#000
+}
+h1 {
+    font-size:30px;
+}
+h2 {
+    font-size:27px;
+}
+h3 {
+    font-size:20px;
+    padding-bottom:37px
+}
+h4 {
+    font-size:16px;
+    padding-bottom:20px
+}
+h4.border-bot {
+    border-bottom:1px solid #cbcbcb;
+    padding-bottom:12px;
+    margin-bottom:9px
+}
+h5 {
+    font-size:16px;
+}
+h6 {
+    font-size:13px;
+    text-transform:none;
+    padding-bottom:6px;
+    line-height:18px;
+    padding-bottom:14px
+}
+h6 a {
+    color:#000
+}
+.search-results h3 {
+    color:#342518;
+    padding-top:40px;
+    padding-left:14px
+}
+/* Global Structure---------------------------------------- */
+/*----- txt,links,lines,titles -----*/
+.clear {
+    clear:both;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+    height:0;
+    width:100%;
+}
+.wrapper {
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+.extra-wrap {
+    overflow:hidden;
+    display:block;
+}
+.fleft {
+    float:left
+}
+.fright {
+    float:right
+}
+.alignright {
+    text-align:right
+}
+.aligncenter {
+    text-align:center
+}
+.alignmiddle * {
+    vertical-align:middle
+}
+.color1 {
+    color:#ef4f33;
+}
+.main-glow {
+    background:url(../images/main-glow.gif) no-repeat 50% 0;
+    min-height:100%
+}
+.main {
+    width:940px;
+    margin:0 auto;
+    position:relative
+}
+p {
+    padding-bottom:12px
+}
+.p0 {
+    padding-bottom:0 !important;
+}
+.p01 {
+    padding-top:0 !important;
+}
+.p {
+    padding-top:1px
+}
+.p1 {
+    padding-top:2px
+}
+.p2 {
+    padding-top:3px
+}
+.p3 {
+    padding-top:4px
+}
+.p4 {
+    padding-top:5px
+}
+.p5 {
+    padding-top:6px
+}
+.p6 {
+    padding-top:7px
+}
+.p7 {
+    padding-top:8px
+}
+.p8 {
+    padding-top:9px
+}
+.p9 {
+    padding-top:10px
+}
+.p10 {
+    padding-top:11px
+}
+.p11 {
+    padding-top:12px
+}
+.p12 {
+    padding-top:13px
+}
+.p13 {
+    padding-top:14px
+}
+.p14 {
+    padding-top:15px
+}
+.p15 {
+    padding-top:16px
+}
+.p16 {
+    padding-top:19px
+}
+.p17 {
+    padding-top:20px
+}
+.p18 {
+    padding-top:25px
+}
+.p19 {
+    padding-top:26px
+}
+.p20 {
+    padding-top:32px
+}
+.p21 {
+    padding-top:35px
+}
+.p22 {
+    padding-top:37px
+}
+.padd-1 {
+    padding-top:45px;
+}
+.m0 {
+    margin:0 !important
+}
+.m1 {
+    margin-top:-1px
+}
+.m2 {
+    margin-top:-2px
+}
+.m3 {
+    margin-top:-3px
+}
+.m4 {
+    margin-top:-4px
+}
+.m5 {
+    margin-top:-5px
+}
+.m6 {
+    margin-top:-7px
+}
+.m7 {
+    margin-top:-13px
+}
+.overflow {
+    overflow:hidden
+}
+.img-indent {
+    float:left;
+    margin:0 18px 0 0
+}
+.img-indent-r {
+    float:right;
+    margin:0 0 0 19px
+}
+.img-indent1 {
+    float:left;
+    margin:0 22px 0 0
+}
+.img-indent2 {
+    float:left;
+    margin:3px 30px 0 0
+}
+.line-h {
+    line-height:20px
+}
+.bg-main {
+    background:url(../images/tail-main.gif) 50% 0
+}
+/*********************************header*************************************/
+header {
+    position:relative;
+    z-index:100;
+}
+header h1 a {
+    display:inline-block;
+    width:228px;
+    height:66px;
+    color: #ffffff;
+}
+header h1 {
+    display:block;
+    float:left;
+    margin-left:-1px;
+    padding:0
+}
+.row-nav {
+    position:relative;
+    z-index:50;
+    background:url(../images/tail-row-nav.gif) repeat-x 0 0 #353434;
+    padding-top:1px
+}
+.row-top {
+    background:#2e2e2e;
+    padding:35px 0 39px
+}
+.box-slider {
+    background:#f2f2f2;
+    padding:16px 0 39px;
+}
+/********************** Content ************************/
+section#content {
+    position:relative;
+    z-index:20;
+    padding:48px 0 47px;
+    background:#f2f2f2
+}
+#page1 section#content {
+    padding:39px 0 47px;
+}
+.inner-1 {
+    padding:0 36px 0 0
+}
+.box-img {
+    background:#fff;
+    padding:10px;
+    border:1px solid #d3d3d3;
+    display:inline-block;
+}
+.box-img img {
+    width:100%
+}
+.border-horiz, .border-horiz1 {
+    background:url(../images/border-horiz.gif) repeat-x 0 0;
+    height:2px;
+    width:100%;
+    margin:51px 0 48px
+}
+.border-horiz.a {
+    margin:34px 0
+}
+.border-horiz1 {
+    margin:9px 0 23px
+}
+.date-1 {
+    font-family: 'Oswald', sans-serif;
+    font-size:24px;
+    line-height:28px;
+    color:#fff;
+    width:60px;
+    text-align:center;
+    float:left;
+    padding:5px 0 4px;
+    margin: 0 20px 0 0;
+    background:#6b6b6b
+}
+.date-1 span {
+    display:block;
+    font-size:10px;
+    line-height:14px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.date-1.a {
+    padding:10px 0 13px
+}
+.box-quote, .box-quote1 {
+    overflow:visible;
+    background:#e3e3e3;
+    padding:13px 17px 14px;
+    margin-left:17px;
+    position:relative
+}
+.box-quote1 {
+    margin: 0 17px 0 0
+}
+.name-date {
+    color:#000;
+    padding-bottom:5px
+}
+.quote-1 {
+    line-height:18px
+}
+.box-quote:after, .box-quote1:after {
+    position:absolute;
+    background:url(../images/quote-arrow.png) no-repeat 0 0;
+    width:17px;
+    height:10px;
+    content:"";
+    top:17px;
+    left:-17px
+}
+.box-quote1:after {
+    background:url(../images/quote-arrow1.png) no-repeat 0 0;
+    width:17px;
+    height:11px;
+    content:"";
+    top:16px;
+    right:-17px;
+    left:auto
+}
+.box-capabiliti figure {
+    margin-bottom:16px
+}
+.box-capabiliti strong {
+    display:block;
+    font-size:12px;
+    color:#7d7d7d
+}
+.name-1 {
+    color:#000;
+    padding-bottom:6px
+}
+.comment {
+    color:#8e8e8e;
+    padding-top:1px
+}
+.comment a {
+    color:#8e8e8e;
+}
+.box-product {
+    padding:10px 10px 9px;
+    border:1px solid #d3d3d3;
+    background:#fff
+}
+.box-product figure {
+    margin-bottom:11px
+}
+.box-product figure img {
+    width:100%
+}
+.box-product h6 {
+    padding-bottom:10px
+}
+/*----- map -----*/
+
+.map {
+    display:inline-block;
+    margin: 0 0 19px 0
+}
+.map iframe {
+    height:246px;
+    overflow: hidden;
+    width:100%;
+}
+/*----- address -----*/
+.mail-1 {
+    color:#b2cf76;
+    display:inline-block;
+    text-decoration:none;
+}
+dl.address {
+    padding-top:5px
+}
+dl.address dt {
+    color:#898989;
+}
+dl.address dd {
+    color:#898989;
+}
+dl.address dd span {
+    display:inline-block;
+    width:68px
+}
+.policy h6 {
+    padding-bottom:11px
+}
+.policy p {
+    padding-bottom:22px
+}
+/*  lists */
+.list-1 {
+    padding-bottom:4px
+}
+.list-1 li {
+    background:url(../images/marker-2.png) no-repeat 0 6px;
+    display:block;
+    padding: 0 0 6px 21px
+}
+.list-1 li a {
+    font-size:13px;
+    line-height:18px;
+    color:#000;
+    display:block;
+}
+.list-1.a li a {
+    line-height:24px;
+}
+.list-1.a li {
+    background:url(../images/marker-2.png) no-repeat 0 8px;
+    padding-bottom:1px
+}
+/*  Buttons & links*/
+.link-1 {
+    color:#484646;
+    font-size:13px;
+    line-height:18px;
+    font-family: 'Oswald', sans-serif;
+    display:inline-block;
+    margin-bottom:2px
+}
+.button {
+    display:inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-size:12px;
+    line-height:18px;
+    color:#616161;
+    text-decoration:underline;position:relative;padding-left:33px;padding-bottom:5px
+}
+.button, .button span {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.button span {
+    width:21px;
+    height:21px;
+    background:url(../images/marker-1.png) no-repeat right 0 #76a712;
+    display:inline-block;
+    position:absolute;top:0;left:0
+}
+.button:hover span {
+    background-color:#616161;
+    background-position: 0 0
+}
+.button:hover {
+    color:#76a712;
+}
+/******************** Footer ******************/
+footer {
+    padding:26px 0;
+}
+.logo-footer {
+    font-size:0;
+    line-height:0;
+}
+.privacy {
+    color:#757575;
+    font-size:12px;
+    line-height:24px;
+}
+.privacy a {
+    font-size:12px;
+    color:#757575;
+    line-height:24px;
+    text-decoration:none
+}
+.privacy a:hover {
+    text-decoration:underline
+}
+.soc {
+    position:absolute;
+    right:1px;
+    top:1px
+}
+.soc a {
+    display:inline-block;
+    margin-left:4px;
+    opacity:1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.soc a:hover {
+    opacity:0.65
+}
+/*==========================================*/
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+    body {
+        min-width:768px;
+    }
+    .main {
+        width:748px
+    }
+    .map iframe {
+        height:250px;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 767px) {
+    body{min-width:320px;}
+    .main {
+        width:300px
+    }
+    nav:after {
+        right: -2px;
+    }
+    .row-top {
+        padding:15px 0;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        min-width:420px;
+    }
+    .main {
+        width:420px
+    }
+    .map iframe {
+        width: 358px;
+    }
+    .box-product figure {
+        float:left;
+        margin-right:16px
+    }
+    .box-product {
+        overflow:hidden;
+        padding-bottom:0
+    }
+}
+/* Project specifics =========================================================== */
+/* Pour some CSS below ========================================================= */
+.white {
+    color: #ffffff;
+}
+
+.contacts span {
+    color: #76a712;
+}
+
+@media only screen and (max-width: 479px) {
+    .contacts {
+        font-size:16px;
+    }
+}

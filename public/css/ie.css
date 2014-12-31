@@ -1,0 +1,4 @@
+.sf-menu > li,.button,.box-img{behavior: url(js/PIE.htc); position:relative;}
+
+
+body{min-width:980px;}

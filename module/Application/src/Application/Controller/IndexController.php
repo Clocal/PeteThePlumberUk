@@ -1,21 +1,36 @@
 <?php
-/**
- * Zend Framework (http://framework.zend.com/)
- *
- * @link      http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd New BSD License
- */
 
 namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
+/**
+ * Application index controller
+ * Doesn't need to do anything too fancy, this is just a simple website (for now)
+ *
+ * @author Rob Caiger
+ */
 class IndexController extends AbstractActionController
 {
+    /**
+     * Render a view based on the url
+     *
+     * @return ViewModel
+     */
     public function indexAction()
     {
-        return new ViewModel();
+
+        $view = rtrim('page/' . $this->params('view'), '/');
+        $resolver = $this->getServiceLocator()->get('Zend\View\Resolver\TemplatePathStack');
+
+        if ($resolver->resolve($view) === false) {
+            return $this->notFoundAction();
+        }
+
+        $content = new ViewModel();
+        $content->setTemplate($view);
+
+        return $content;
     }
 }
